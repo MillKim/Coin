@@ -1,8 +1,5 @@
 streamlit
-random
-matplotlib.pyplot
+streamlit.extras
 matplotlib
+pandas
 numpy
-PIL
-os
-matplotlib.font_manager
