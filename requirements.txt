@@ -1,0 +1,8 @@
+streamlit
+random
+matplotlib.pyplot
+matplotlib
+numpy
+PIL
+os
+matplotlib.font_manager
