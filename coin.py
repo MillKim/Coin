@@ -16,7 +16,7 @@ fm._load_fontmanager(try_read_cache=False)
 plt.rc('font', family='NanumSquareRound')
 mpl.rcParams['axes.unicode_minus'] = False
 
-st.title("	:punch: 동전 던지기 	:eyes:")
+st.title("	:punch: 동전 던지기")
 
 if "n" not in st.session_state:
     st.session_state["n"] = 0
@@ -63,7 +63,7 @@ if st.button("던지기"):
     st.write("동전을 {}회 던졌습니다.".format(input_n))
     st.write("지금까지 던진 횟수는 총 {}회입니다.".format(st.session_state["n"]))
     st.write("앞면이 나온 횟수는 총 {}, 뒷면이 나온 횟수는 총 {} 입니다.".format(st.session_state["head"], st.session_state["tail"]))
-    st.write("앞면이 나온 상대도수는 {:.4f}, 뒷면이 나온 횟수의 상대도수는 {:.4f} 입니다.".format(st.session_state["head"]/st.session_state["n"], st.session_state["tail"]/st.session_state["n"]))
+    st.write("앞면이 나온 횟수의 상대도수는 {:.4f}, 뒷면이 나온 횟수의 상대도수는 {:.4f} 입니다.".format(st.session_state["head"]/st.session_state["n"], st.session_state["tail"]/st.session_state["n"]))
 
 if st.button("Reset"):
     st.session_state["n"] = 0
@@ -76,7 +76,7 @@ st.write("")
 st.divider()
 st.write("")
 
-st.write("동전을 던진 횟수에 따른 앞면에 나온 횟수의 상대도수의 변화를 그래프로 관찰해봅시다.")
+st.write("동전을 던진 횟수에 따른 앞면에 나온 횟수의 상대도수의 변화를 그래프로 관찰해봅시다. :eyes:")
 
 if st.button("그래프 그리기") : 
     fig = plt.figure()
